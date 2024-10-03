@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+
+    background-color: #50728B;
+    width: 800px;
+    border-radius: 10px;
+    padding: 35px;
+
+
+}
+
+.box {
+    padding: 13px 20px 0px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    height: 340px;
+}
+
+body h1 {
+    padding: 12px;
+    height: 62px;
+    margin: 0px 0px 40px;
+    width: 790px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: #50728B;
+
+}
+
+.para {
+    height: 270px;
+    padding: 8px;
+    overflow: scroll;
+    box-shadow: 0px 0px 5px 0px rgb(180, 167, 167);
+}
+
+.para::-webkit-scrollbar {
+    display: none;
+}
+
+.para p {
+
+    font-size: 21px;
+    text-align: justify;
+   word-break: break-all;
+    letter-spacing: 1px;
+
+}
+
+.para p span.correct{
+    color: #1df704;
+
+}
+.para p span{position: relative;}
+
+.para p span.incorrect{
+color: rgb(248, 0, 0);
+background-color: rgba(255, 192, 203, 0.478);
+border-radius: 2px;
+}
+
+.para p span.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    background: #f0f0f0;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 1;
+    }
+}
+
+
+.content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+
+.details {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100% - 140px);
+}
+
+.details li{
+display: flex;
+list-style: none;
+font-weight: 500;
+font-size: larger;
+
+}
+
+.details li p{
+   margin: 0px 5px;
+    
+}
+
+.content button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 105px;
+    padding: 8px 0px; 
+    font-size: 16px;
+    border-radius: 5px;
+    background: #f0f0f0;
+}
+
+
+.content button:active{
+
+   transform: scale(0.95);
+}
+
+.input-field{
+    opacity: 1;
+display: absolute;
+}

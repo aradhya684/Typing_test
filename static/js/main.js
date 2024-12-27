@@ -98,7 +98,7 @@ function initTyping() {
                 mistakecount--
             }
             char[charindex].classList.remove("correct", "incorrect")
-
+    
 
         }
         else {
